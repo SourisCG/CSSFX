@@ -1,0 +1,10 @@
+{
+  "name": "JavaFX CSS",
+  "scopeName": "source.css.javafx",
+  "fileTypes": ["fx.css"],
+  "patterns": [
+    {
+      "include": "source.css"
+    }
+  ]
+}

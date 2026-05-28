@@ -1,0 +1,74 @@
+{
+  "name": "cssfx",
+  "displayName": "CSSFX",
+  "description": "Full CSS autocomplete for JavaFX applications with -fx- properties, values, pseudo-classes and validation",
+  "version": "0.0.2",
+  "publisher": "cssfx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SourisCG/CSSFX"
+  },
+  "bugs": {
+    "url": "https://github.com/SourisCG/CSSFX/issues"
+  },
+  "homepage": "https://github.com/SourisCG/CSSFX#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "javafx",
+    "css",
+    "java",
+    "autocomplete",
+    "intellisense"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:javafxcSS"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "javafxcSS",
+        "aliases": [
+          "JavaFX CSS",
+          "javafx css"
+        ],
+        "extensions": [
+          ".fx.css"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "javafxcSS",
+        "scopeName": "source.css.javafx",
+        "path": "./syntaxes/javafx-css.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "vscode-css-languageservice": "^6.2.12",
+    "vscode-languageclient": "^9.0.1",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.11",
+    "vscode-uri": "^3.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.3.3"
+  }
+}

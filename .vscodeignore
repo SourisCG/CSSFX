@@ -1,0 +1,15 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.map
+**/*.ts
+node_modules/**
+!node_modules/vscode-css-languageservice/**
+!node_modules/vscode-languageserver/**
+!node_modules/vscode-languageserver-textdocument/**
+!node_modules/vscode-uri/**
