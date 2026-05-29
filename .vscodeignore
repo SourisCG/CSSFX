@@ -9,6 +9,7 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 node_modules/**
+!node_modules/@vscode/l10n/**
 !node_modules/vscode-css-languageservice/**
 !node_modules/vscode-languageclient/**
 !node_modules/vscode-languageserver/**
@@ -17,3 +18,8 @@ node_modules/**
 !node_modules/vscode-languageserver-types/**
 !node_modules/vscode-jsonrpc/**
 !node_modules/vscode-uri/**
+!node_modules/minimatch/**
+!node_modules/semver/**
+!node_modules/brace-expansion/**
+!node_modules/balanced-match/**
+!node_modules/concat-map/**
