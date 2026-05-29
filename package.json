@@ -2,7 +2,7 @@
   "name": "cssfx",
   "displayName": "CSSFX",
   "description": "Full CSS autocomplete for JavaFX applications with -fx- properties, values, pseudo-classes and validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "SourisCG",
   "license": "MIT",
   "repository": {
