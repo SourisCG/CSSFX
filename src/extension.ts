@@ -22,7 +22,10 @@ export function activate(context: ExtensionContext) {
   };
 
   const clientOptions: LanguageClientOptions = {
-    documentSelector: [{ scheme: 'file', language: 'javafxcSS' }],
+    documentSelector: [
+      { scheme: 'file', language: 'javafxc' },
+      { scheme: 'untitled', language: 'javafxc' }
+    ],
     synchronize: {
       fileEvents: [
         // Watch for .fx.css file changes
@@ -31,7 +34,7 @@ export function activate(context: ExtensionContext) {
   };
 
   client = new LanguageClient(
-    'javafxcSS',
+    'javafxc',
     'JavaFX CSS Language Server',
     serverOptions,
     clientOptions

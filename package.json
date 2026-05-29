@@ -2,7 +2,7 @@
   "name": "cssfx",
   "displayName": "CSSFX",
   "description": "Full CSS autocomplete for JavaFX applications with -fx- properties, values, pseudo-classes and validation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "SourisCG",
   "license": "MIT",
   "repository": {
@@ -28,12 +28,12 @@
   ],
   "main": "./out/extension.js",
   "activationEvents": [
-    "onLanguage:javafxcSS"
+    "onLanguage:javafxc"
   ],
   "contributes": {
-    "languages": [
+      "languages": [
       {
-        "id": "javafxcSS",
+        "id": "javafxc",
         "aliases": [
           "JavaFX CSS",
           "javafx css"
@@ -44,9 +44,9 @@
         "configuration": "./language-configuration.json"
       }
     ],
-    "grammars": [
+      "grammars": [
       {
-        "language": "javafxcSS",
+        "language": "javafxc",
         "scopeName": "source.css.javafx",
         "path": "./syntaxes/javafx-css.tmLanguage.json"
       }
